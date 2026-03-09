@@ -1,0 +1,29 @@
+body {
+    font-family: system-ui, sans-serif;
+    background: #0f0f0f;
+    color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    max-width: 700px;
+}
+
+#headline {
+    font-size: 1.8rem;
+    margin: 40px 0;
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px 16px;
+    background: #ff4500;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
