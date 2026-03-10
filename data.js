@@ -1,18 +1,18 @@
 const TEMPLATES = [
-    "{REACTION_NEG} {TRACKER} mods just {VERB} {USER} for {ACTION}.",
-    "{REACTION_NEG} {TRACKER} staff just {VERB_EXTRA} for {ACTION}.",
-    "BREAKING: {TRACKER} just {VERB_BIGTIME}.",
-    "{TRACKER} rules are ridiculous. Just got suspended for {ACTION}.",
-    "BREAKING: {TRACKER} staff just banned {FEATURE}.",
-    "{REACTION_NEG} Just got {VERB} from {TRACKER} for {ACTION}.",
-    "{REACTION_NEG} {TRACKER} just {VERB_EXTRA}.",
+    "{REACTION_NEG} {TRACKER} mods just {VERB} {USER} for {ACTION}",
+    "{REACTION_NEG} {TRACKER} staff just {VERB_EXTRA} for {ACTION}",
+    "BREAKING: {TRACKER} just {VERB_BIGTIME}",
+    "{TRACKER} rules are ridiculous. Just got suspended for {ACTION}",
+    "BREAKING: {TRACKER} staff just banned {FEATURE}",
+    "{REACTION_NEG} Just got {VERB} from {TRACKER} for {ACTION}",
+    "{REACTION_NEG} {TRACKER} just {VERB_EXTRA}",
     "When will the autobrr team make a replacement for {SAVE_US_AUTOBRR}?",
-    "{REACTION_NEUTRAL} {TRACKER} just {VERB} {USER} for {ACTION}.",
-    "{REACTION_NEUTRAL} {TRACKER} is now recruiting on {RECRUITMENT}.",
-    "{REACTION_NEUTRAL} {TRACKER} just stopped allowing {FEATURE}.",
-    "{THINK} {TRACKER} will be cabal in {YEAR} years.",
-    "{THINK} {TRACKER} is about to overtake {TRACKER}.",
-    "{REACTION} {TRACKER} is about to overtake {TRACKER}."
+    "{REACTION_NEUTRAL} {TRACKER} just {VERB} {USER} for {ACTION}",
+    "{REACTION_NEUTRAL} {TRACKER} is now recruiting on {RECRUITMENT}",
+    "{REACTION_NEUTRAL} {TRACKER} just stopped allowing {FEATURE}",
+    "{THINK} {TRACKER} will be cabal in {YEAR} years",
+    "{THINK} {TRACKER} is about to overtake {TRACKER}",
+    "{REACTION} {TRACKER} is about to overtake {TRACKER}"
 ];
 
 const TOKENS = {
