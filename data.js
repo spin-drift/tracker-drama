@@ -1,94 +1,91 @@
 const TEMPLATES = [
-    "{REACTION_NEG} {TRACKER} mods just {VERB} {USER} for {ACTION} {?ASIDE}",
-    "{REACTION_NEG} {TRACKER} staff just {VERB_EXTRA} for {ACTION} {?ASIDE}",
-    "BREAKING: {TRACKER} staff just {VERB_BIGTIME}",
-    "{TRACKER} rules are ridiculous. Just got suspended for {ACTION} {?ASIDE}",
-    "BREAKING: {TRACKER} staff just banned {FEATURE}",
-    "{REACTION_NEG} Just got {VERB} from {TRACKER} for {ACTION} {?ASIDE}",
-    "{REACTION_NEG} {TRACKER} just {VERB_EXTRA}",
+    "{NEG_OPENER} {TRACKER} mods just {PUNISHMENT} for {OFFENSE} {?ASIDE}",
+    "{NEG_OPENER} {TRACKER} mods just {PUNISHMENT} for {OFFENSE} {?BUT_ALSO}",
+    "{NEG_OPENER} {TRACKER} staff just {PUNISHMENT} for {OFFENSE} {?ASIDE}",
+    "{NEG_OPENER} {TRACKER} staff just {PUNISHMENT} for {OFFENSE} {?BUT_ALSO}",
+    "BREAKING: {TRACKER} staff just {DID_SOMETHING_CRAZY}",
+    "BREAKING: {TRACKER} just {DID_SOMETHING_CRAZY}",
+    "BREAKING: {TRACKER} just announced they {DID_SOMETHING_CRAZY}",
+    "Any way to get back into {TRACKER} after I got banned for {OFFENSE}? {?BUT_ALSO}",
+    "{TRACKER} rules are ridiculous. Just got suspended for {OFFENSE} {?ASIDE}",
     "When will the autobrr team make a replacement for {SAVE_US_AUTOBRR}?",
-    "{REACTION_NEUTRAL} {TRACKER} just {VERB} {USER} for {ACTION} {?ASIDE}",
-    "{REACTION_NEUTRAL} {TRACKER} is now recruiting on {RECRUITMENT}",
-    "{REACTION_NEUTRAL} {TRACKER} just stopped allowing {FEATURE}",
-    "{THINK} {TRACKER} will be cabal in {YEAR}",
-    "{THINK} {TRACKER} is about to overtake {TRACKER}",
-    "{REACTION_NEUTRAL} {TRACKER} is about to overtake {TRACKER}",
+    "When is the autobrr team gonna finally give us a replacement for {SAVE_US_AUTOBRR}?",
+    "{OPENER} {TRACKER} is now recruiting from {PLACE}",
+    "{OPENER} {TRACKER} just announced they're going to start recruiting on {PLACE}",
+    "{I_THINK} {TRACKER} will be cabal in {TIME}",
+    "{I_THINK} {TRACKER} will be cabal in {TIME}",
+    "{I_THINK} {TRACKER} is going to overtake {TRACKER}",
+    "{I_THINK} {TRACKER} is about to overtake {TRACKER}",
 ];
 
 const TOKENS = {
     TRACKER: [
         "Aither",
+        "Aither",
         "Blutopia",
         "PTP",
+        "PTP",
         "GGn",
-        "MAM",
+        "MyAnonamouse",
         "ULCX",
         "RED",
         "OPS",
         "BHD",
+        "BHD",
         "MTV",
         "BTN",
         "FNP",
+        "OTW",
+        "HUNO",
+        "LST",
         "seedpool",
+        "seedpool",
+        "AvistaZ",
+        "CinemaZ",
     ],
 
-    REACTION_NEG: [
+    NEG_OPENER: [
         "HELP!",
+        "The fuck?",
         "Ugh, I'm done.",
         "I can't believe this.",
         "Wow.",
-        "I can't believe it.",
         "Be careful:",
-        ],
-        
-    REACTION_NEUTRAL: [
+    ],
+
+    OPENER: [
         "Guys,",
-        "Did you hear?",
+        "GUYS!!",
+        "Did you hear?"
     ],
 
-    USER: [
-        "me",
-        "a user"
-    ],
-
-    VERB: [
-        "banned",
-        "muted",
-        "suspended"
-    ],
-
-    VERB_EXTRA: [
+    PUNISHMENT: [
+        "banned me",
+        "chatbox muted me",
+        "suspended me",
+        "tree-banned me",
+        "banned a user",
+        "suspended a user",
         "revoked my upload rights",
         "revoked my download rights",
-        "disabled my avatar",
-        "changed my profile to something horrible",
+        "disabled my sparkles",
         "killed my parents",
         "deleted my seedbox",
-        "hacked into my homelab",
-        "removed my TRaSH guides sync",
-        "deleted my qui",
-        "stopped all my cross-seeding",
+        "froze all my BON",
+        "deleted all my cross-seeds",
     ],
 
-    VERB_BIGTIME: [
-        "deleted the tracker",
-        "leaked the invite tree",
-        "made anime mandatory",
-        "banned anime",
-        "reset everyone's ratio",
-        "disabled seeding",
-        "merged with IPT",
-        "got hacked by ex-{TRACKER} staff"
-    ],
-
-    ACTION: [
-        "reading the rules",
+    OFFENSE: [
+        "rebuilding my ZFS pool",
+        "recommending ZFS",
         "seeding anime",
+        "not seeding enough anime",
         "having a positive ratio",
         "using a seedbox",
         "being nice to a corgi",
-        "talking smack about a thimble",
-        "letting my ratio go negative",
+        "being rude to a thimble",
+        "confusing spindrift with spindrifter",
+        "calling them out on their racism",
         "posting a meme in the forums",
         "asking about freeleech",
         "posting a screenshot of the rules",
@@ -96,22 +93,65 @@ const TOKENS = {
         "submitting a help ticket",
         "trying to use the tag -Kitsune",
         "trying to use the tag -NTb",
-        "trying to use the tag -hallowed",
+        "trying to use the tag -DON",
+        "cross-seeding their internals",
+        "applying for Uploader",
+        "applying to be an internal",
         "sending feet pics to mods",
         "not sending feet pics to mods",
         "calling you-know-who a femboy",
         "uploading Dailymotion fanres",
-        "not wearing a hat"
+        "making bad remuxes",
+        "making great remuxes",
+        "not wearing a hat",
+        "wearing a hat"
     ],
 
-    RECRUITMENT: [
-        "the UA Discord",
+    BUT_ALSO: [
+        "(and invite trading)",
+        "(and asking for invites)",
+        "(and clogging up modq)",
+        "(and using racial slurs)",
+        "",
+        "",
+        "",
+        ""
+    ],
+
+    DID_SOMETHING_CRAZY: [
+        "deleted the tracker",
+        "leaked their entire torrent database",
+        "made anime uploads mandatory",
+        "banned all anime",
+        "reset everyone's ratio",
+        "disabled seeding",
+        "merged with IPT",
+        "decided to stop keeping backups",
+        "got hacked by ex-{TRACKER} staff",
+        "declared war on {TRACKER} staff",
+        "decided to ban all {TRACKER} internals",
+        "banned all {TRACKER} users",
+        "got rid of all their internals",
+        "reset everyone's upload stats",
+        "forked UNIT3D",
+        "made having BON illegal",
+        "banned everyone in chatbox",
+        "decided to pivot to debrid",
+    ],
+
+    PLACE: [
         "Seadex",
-        "Reddit",
+        "Seadex",
+        "Seadex",
+        "autobrr's Discord",
+        "autobrr's GitHub issues",
+        "Upload-Assistant's Discord",
+        "Upload-Assistant's GitHub issues",
         "cross-seed's Discord",
-        "Chaptarr Discord",
-        "preDB",
-        "autobrr's GitHub issues"
+        "cross-seed's GitHub issues",
+        "Chaptarr's Discord",
+        "TRaSH Guide's Discord",
+        "TRaSH Guide's GitHub issues",
     ],
 
     SAVE_US_AUTOBRR: [
@@ -130,16 +170,7 @@ const TOKENS = {
         "ZFS",
     ],
 
-    FEATURE: [
-        "internals",
-        "upload stats",
-        "BON",
-        "friend lists",
-        "forums",
-        "torrents"
-    ],
-
-    YEAR: [
+    TIME: [
         "less than 6 months",
         "1 year",
         "2 years",
@@ -149,20 +180,21 @@ const TOKENS = {
         "10 years",
     ],
 
-    THINK: [
+    I_THINK: [
         "I think",
         "I genuinely think",
-        "I strongly believe"
+        "I strongly believe",
+        "Theory:"
     ],
 
     ASIDE: [
         "(with no warning)",
         "(on my birthday)",
         "(I was top 10 in upload)",
+        "(I had a 100TB seedsize)",
         "(after 6 years of membership)",
         "(right after I donated)",
         "(while I was sleeping)",
-        "(on Christmas)",
         "(during freeleech)",
     ],
 
