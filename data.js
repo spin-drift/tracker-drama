@@ -37,9 +37,7 @@ const TOKENS = {
         "HUNO",
         "LST",
         "seedpool",
-        "seedpool",
-        "AvistaZ",
-        "CinemaZ",
+        "seedpool"
     ],
 
     NEG_OPENER: [
