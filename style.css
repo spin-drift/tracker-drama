@@ -17,6 +17,11 @@ body {
 #headline {
     font-size: 1.8rem;
     margin: 40px 0;
+    min-height: 3.6em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button {

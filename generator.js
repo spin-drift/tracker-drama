@@ -11,7 +11,7 @@ function pickExcluding(arr, exclude) {
 function expand(str) {
 
     let result = str;
-    const seen = {};          // track picks per token key to avoid dupes
+    const seen = {};  // track picks per token key to avoid dupes
 
     for (let i = 0; i < 10; i++) { // prevents infinite loops
 
@@ -62,7 +62,7 @@ function pickTemplate() {
 function generateHeadline() {
 
     const template = pickTemplate();
-    const headline = expand(template);
+    const headline = expand(template) + pick([".", ".", "", "", "??"]);
 
     return headline
         .replace(/\s+/g, " ")

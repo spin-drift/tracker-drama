@@ -1,18 +1,18 @@
 const TEMPLATES = [
-    "{REACTION} {TRACKER} mods just {VERB} {USER} for {ACTION} {?ASIDE}",
-    "{REACTION} {TRACKER} staff just {VERB_EXTRA} for {ACTION}",
-    "{REACTION} {TRACKER} staff just {VERB_BIGTIME}",
-    "{TRACKER} rules are ridiculous. I just got in trouble for {ACTION} {?ASIDE}",
-    "{REACTION} {TRACKER} staff just banned {FEATURE}",
-    "{REACTION} Just got {VERB} from {TRACKER} for {ACTION} {?ASIDE}",
-    "{REACTION} {TRACKER} just {VERB_EXTRA}",
+    "{REACTION_NEG} {TRACKER} mods just {VERB} {USER} for {ACTION} {?ASIDE}",
+    "{REACTION_NEG} {TRACKER} staff just {VERB_EXTRA} for {ACTION} {?ASIDE}",
+    "BREAKING: {TRACKER} staff just {VERB_BIGTIME}",
+    "{TRACKER} rules are ridiculous. Just got suspended for {ACTION} {?ASIDE}",
+    "BREAKING: {TRACKER} staff just banned {FEATURE}",
+    "{REACTION_NEG} Just got {VERB} from {TRACKER} for {ACTION} {?ASIDE}",
+    "{REACTION_NEG} {TRACKER} just {VERB_EXTRA}",
     "When will the autobrr team make a replacement for {SAVE_US_AUTOBRR}?",
-    "{REACTION} {TRACKER} just {VERB} {USER} for {ACTION} {?ASIDE}",
-    "{REACTION} {TRACKER} is now recruiting on {RECRUITMENT}",
-    "{REACTION} {TRACKER} just stopped allowing {FEATURE}",
+    "{REACTION_NEUTRAL} {TRACKER} just {VERB} {USER} for {ACTION} {?ASIDE}",
+    "{REACTION_NEUTRAL} {TRACKER} is now recruiting on {RECRUITMENT}",
+    "{REACTION_NEUTRAL} {TRACKER} just stopped allowing {FEATURE}",
     "{THINK} {TRACKER} will be cabal in {YEAR}",
     "{THINK} {TRACKER} is about to overtake {TRACKER}",
-    "{REACTION} {TRACKER} is about to overtake {TRACKER}"
+    "{REACTION_NEUTRAL} {TRACKER} is about to overtake {TRACKER}",
 ];
 
 const TOKENS = {
@@ -32,16 +32,18 @@ const TOKENS = {
         "seedpool",
     ],
 
-    REACTION: [
+    REACTION_NEG: [
         "HELP!",
         "Ugh, I'm done.",
         "I can't believe this.",
         "Wow.",
-        "Guys,",
-        "Be careful:",
         "I can't believe it.",
+        "Be careful:",
+        ],
+        
+    REACTION_NEUTRAL: [
+        "Guys,",
         "Did you hear?",
-        "",
     ],
 
     USER: [
@@ -92,13 +94,14 @@ const TOKENS = {
         "posting a screenshot of the rules",
         "even THINKING about cabal",
         "submitting a help ticket",
-        "changing my tag to Kitsune",
-        "changing my tag to NTb",
-        "changing my tag to hallowed",
+        "trying to use the tag -Kitsune",
+        "trying to use the tag -NTb",
+        "trying to use the tag -hallowed",
         "sending feet pics to mods",
         "not sending feet pics to mods",
         "calling you-know-who a femboy",
         "uploading Dailymotion fanres",
+        "not wearing a hat"
     ],
 
     RECRUITMENT: [
