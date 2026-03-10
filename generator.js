@@ -24,6 +24,8 @@ function generateHeadline() {
     const template = pick(TEMPLATES);
     const headline = expand(template);
 
+    headline += pick([".", "", "??"]);
+
     return headline
         .replace(/\s+/g, " ")
         .replace(/\s+([?.!,])/g, "$1")
