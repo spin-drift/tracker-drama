@@ -1,15 +1,15 @@
 const TEMPLATES = [
-    "{REACTION} {TRACKER} mods just {VERB} {USER} for {ACTION}",
-    "{REACTION} {TRACKER} staff just {VERB_EXTRA} for {ACTION}.",
-    "{REACTION} {TRACKER} staff just {VERB_BIGTIME}.",
-    "{TRACKER} rules are ridiculous. I just got in trouble for {ACTION}",
-    "{REACTION} {TRACKER} staff just banned {FEATURE}.",
-    "{REACTION} Just got {VERB} from {TRACKER} for {ACTION}.",
-    "{REACTION} {TRACKER} just {VERB_EXTRA}.",
+    "{REACTION_NEG} {TRACKER} mods just {VERB} {USER} for {ACTION}.",
+    "{REACTION_NEG} {TRACKER} staff just {VERB_EXTRA} for {ACTION}.",
+    "BREAKING: {TRACKER} just {VERB_BIGTIME}.",
+    "{TRACKER} rules are ridiculous. Just got suspended for {ACTION}.",
+    "BREAKING: {TRACKER} staff just banned {FEATURE}.",
+    "{REACTION_NEG} Just got {VERB} from {TRACKER} for {ACTION}.",
+    "{REACTION_NEG} {TRACKER} just {VERB_EXTRA}.",
     "When will the autobrr team make a replacement for {SAVE_US_AUTOBRR}?",
-    "{REACTION} {TRACKER} just {VERB} {USER} for {ACTION}.",
-    "{REACTION} {TRACKER} is now recruiting on {RECRUITMENT}.",
-    "{REACTION} {TRACKER} just stopped allowing {FEATURE}.",
+    "{REACTION_NEUTRAL} {TRACKER} just {VERB} {USER} for {ACTION}.",
+    "{REACTION_NEUTRAL} {TRACKER} is now recruiting on {RECRUITMENT}.",
+    "{REACTION_NEUTRAL} {TRACKER} just stopped allowing {FEATURE}.",
     "{THINK} {TRACKER} will be cabal in {YEAR} years.",
     "{THINK} {TRACKER} is about to overtake {TRACKER}.",
     "{REACTION} {TRACKER} is about to overtake {TRACKER}."
@@ -32,16 +32,18 @@ const TOKENS = {
         "seedpool",
     ],
 
-    REACTION: [
+    REACTION_NEG: [
         "HELP!",
         "Ugh, I'm done.",
         "I can't believe this.",
         "Wow.",
-        "Guys,",
-        "Be careful:",
         "I can't believe it.",
+        "Be careful:",
+        ],
+        
+    REACTION_NEUTRAL: [
+        "Guys,",
         "Did you hear?",
-        "",
     ],
 
     USER: [
