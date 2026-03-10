@@ -1,18 +1,18 @@
 const TEMPLATES = [
-    "{REACTION} {TRACKER} mods just {VERB} {USER} for {ACTION}",
-    "{REACTION} {TRACKER} staff just {VERB_EXTRA} for {ACTION}.",
-    "{REACTION} {TRACKER} staff just {VERB_BIGTIME}.",
-    "{TRACKER} rules are ridiculous. I just got in trouble for {ACTION}",
-    "{REACTION} {TRACKER} staff just banned {FEATURE}.",
-    "{REACTION} Just got {VERB} from {TRACKER} for {ACTION}.",
-    "{REACTION} {TRACKER} just {VERB_EXTRA}.",
+    "{REACTION} {TRACKER} mods just {VERB} {USER} for {ACTION} {?ASIDE}",
+    "{REACTION} {TRACKER} staff just {VERB_EXTRA} for {ACTION}",
+    "{REACTION} {TRACKER} staff just {VERB_BIGTIME}",
+    "{TRACKER} rules are ridiculous. I just got in trouble for {ACTION} {?ASIDE}",
+    "{REACTION} {TRACKER} staff just banned {FEATURE}",
+    "{REACTION} Just got {VERB} from {TRACKER} for {ACTION} {?ASIDE}",
+    "{REACTION} {TRACKER} just {VERB_EXTRA}",
     "When will the autobrr team make a replacement for {SAVE_US_AUTOBRR}?",
-    "{REACTION} {TRACKER} just {VERB} {USER} for {ACTION}.",
-    "{REACTION} {TRACKER} is now recruiting on {RECRUITMENT}.",
-    "{REACTION} {TRACKER} just stopped allowing {FEATURE}.",
-    "{THINK} {TRACKER} will be cabal in {YEAR} years.",
-    "{THINK} {TRACKER} is about to overtake {TRACKER}.",
-    "{REACTION} {TRACKER} is about to overtake {TRACKER}."
+    "{REACTION} {TRACKER} just {VERB} {USER} for {ACTION} {?ASIDE}",
+    "{REACTION} {TRACKER} is now recruiting on {RECRUITMENT}",
+    "{REACTION} {TRACKER} just stopped allowing {FEATURE}",
+    "{THINK} {TRACKER} will be cabal in {YEAR}",
+    "{THINK} {TRACKER} is about to overtake {TRACKER}",
+    "{REACTION} {TRACKER} is about to overtake {TRACKER}"
 ];
 
 const TOKENS = {
@@ -137,20 +137,30 @@ const TOKENS = {
     ],
 
     YEAR: [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "10",
-        "15",
-        "20"
+        "less than 6 months",
+        "1 year",
+        "2 years",
+        "3 years",
+        "4 years",
+        "5 years",
+        "10 years",
     ],
 
     THINK: [
         "I think",
         "I genuinely think",
         "I strongly believe"
-    ]
+    ],
+
+    ASIDE: [
+        "(with no warning)",
+        "(on my birthday)",
+        "(I was top 10 in upload)",
+        "(after 6 years of membership)",
+        "(right after I donated)",
+        "(while I was sleeping)",
+        "(on Christmas)",
+        "(during freeleech)",
+    ],
 
 };
