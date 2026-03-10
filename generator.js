@@ -62,14 +62,20 @@ function pickTemplate() {
 function generateHeadline() {
 
     const template = pickTemplate();
-    const headline = expand(template) + pick([".", ".", "", "", "??"]);
+    let headline = expand(template);
 
-    return headline
+    headline = headline
         .replace(/\s+/g, " ")
         .replace(/\s+([?.!,])/g, "$1")
         .replace(/^,\s*/, "")
-        .trim()
-        .replace(/^./, c => c.toUpperCase());
+        .trim();
+
+    // only add random ending punctuation if it doesn't already end with some
+    if (!/[.!?]$/.test(headline)) {
+        headline += pick([".", ".", "", "", "??"]);
+    }
+
+    return headline.replace(/^./, c => c.toUpperCase());
 }
 
 function render() {
