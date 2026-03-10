@@ -22,9 +22,7 @@ function expand(str) {
 function generateHeadline() {
 
     const template = pick(TEMPLATES);
-    const headline = expand(template);
-
-    headline += pick([".", "", "??"]);
+    const headline = expand(template) + pick([".", "", "??"]);
 
     return headline
         .replace(/\s+/g, " ")
