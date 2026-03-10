@@ -94,13 +94,14 @@ const TOKENS = {
         "posting a screenshot of the rules",
         "even THINKING about cabal",
         "submitting a help ticket",
-        "changing my tag to Kitsune",
-        "changing my tag to NTb",
-        "changing my tag to hallowed",
+        "trying to use the tag -Kitsune",
+        "trying to use the tag -NTb",
+        "trying to use the tag -hallowed",
         "sending feet pics to mods",
         "not sending feet pics to mods",
         "calling you-know-who a femboy",
         "uploading Dailymotion fanres",
+        "not wearing a hat"
     ],
 
     RECRUITMENT: [
