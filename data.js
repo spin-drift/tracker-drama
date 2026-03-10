@@ -12,7 +12,7 @@ const TEMPLATES = [
     "{REACTION_NEUTRAL} {TRACKER} just stopped allowing {FEATURE}",
     "{THINK} {TRACKER} will be cabal in {YEAR} years",
     "{THINK} {TRACKER} is about to overtake {TRACKER}",
-    "{REACTION} {TRACKER} is about to overtake {TRACKER}"
+    "{REACTION_NEUTRAL} {TRACKER} is about to overtake {TRACKER}"
 ];
 
 const TOKENS = {
