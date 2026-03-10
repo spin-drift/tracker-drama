@@ -1,12 +1,10 @@
 const TEMPLATES = [
     "{NEG_OPENER} {TRACKER} mods just {PUNISHMENT} for {OFFENSE} {?ASIDE}",
-    "{NEG_OPENER} {TRACKER} mods just {PUNISHMENT} for {OFFENSE} {?BUT_ALSO}",
     "{NEG_OPENER} {TRACKER} staff just {PUNISHMENT} for {OFFENSE} {?ASIDE}",
-    "{NEG_OPENER} {TRACKER} staff just {PUNISHMENT} for {OFFENSE} {?BUT_ALSO}",
     "BREAKING: {TRACKER} staff just {DID_SOMETHING_CRAZY}",
     "BREAKING: {TRACKER} just {DID_SOMETHING_CRAZY}",
     "BREAKING: {TRACKER} just announced they {DID_SOMETHING_CRAZY}",
-    "Any way to get back into {TRACKER} after I got banned for {OFFENSE}? {?BUT_ALSO}",
+    "Any way to get back into {TRACKER} after I got banned for {OFFENSE}? {?ASIDE}",
     "{TRACKER} rules are ridiculous. Just got suspended for {OFFENSE} {?ASIDE}",
     "When will the autobrr team make a replacement for {SAVE_US_AUTOBRR}?",
     "When is the autobrr team gonna finally give us a replacement for {SAVE_US_AUTOBRR}?",
@@ -107,15 +105,19 @@ const TOKENS = {
         "wearing a hat"
     ],
 
-    BUT_ALSO: [
+    ASIDE: [
+        "(with no warning)",
+        "(on my birthday)",
+        "(I was top 10 in upload)",
+        "(I had a 100TB seedsize)",
+        "(after 6 years of membership)",
+        "(right after I donated)",
+        "(while I was sleeping)",
+        "(during freeleech)",
         "(and invite trading)",
         "(and asking for invites)",
         "(and clogging up modq)",
         "(and using racial slurs)",
-        "",
-        "",
-        "",
-        ""
     ],
 
     DID_SOMETHING_CRAZY: [
@@ -143,6 +145,7 @@ const TOKENS = {
         "Seadex",
         "Seadex",
         "Seadex",
+        "scene",
         "autobrr's Discord",
         "autobrr's GitHub issues",
         "Upload-Assistant's Discord",
@@ -185,17 +188,6 @@ const TOKENS = {
         "I genuinely think",
         "I strongly believe",
         "Theory:"
-    ],
-
-    ASIDE: [
-        "(with no warning)",
-        "(on my birthday)",
-        "(I was top 10 in upload)",
-        "(I had a 100TB seedsize)",
-        "(after 6 years of membership)",
-        "(right after I donated)",
-        "(while I was sleeping)",
-        "(during freeleech)",
     ],
 
 };
