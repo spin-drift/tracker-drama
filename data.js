@@ -72,6 +72,7 @@ const TOKENS = {
     ],
 
     OFFENSE: [
+        "being TOO good at racing",
         "rebuilding my ZFS pool",
         "recommending ZFS",
         "seeding anime",
