@@ -12,7 +12,7 @@ const TEMPLATES = [
     "{OPENER} {TRACKER} mods just left and joined {TRACKER}",
     "{REVEAL} {TRACKER} mods are secretly in charge of the subreddit",
     "{REVEAL} {TRACKER} is dying because the mods defected to {TRACKER}",
-    "{REVEAL} {TRACKER} is closing because {CLOSING_REASON}"
+    "{REVEAL} {TRACKER} is closing because {CLOSING_REASON}",
     "{OPENER} {TRACKER} just announced they're going to start recruiting on {PLACE}",
     "{I_THINK} {TRACKER} will be cabal in {TIME}",
     "{I_THINK} {TRACKER} will be cabal in {TIME}",
