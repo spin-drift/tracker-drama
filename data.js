@@ -52,7 +52,7 @@ const TOKENS = {
 
     CLOSING_REASON: [
         "I'm mad",
-        "Influencers stole all my money",
+        "influencers stole all my money",
         "{TRACKER} stole all my staff",
         "/r/trackers mods stole all my money",
         "I was hacked by /r/trackers mods who are secretly agents of {TRACKER}"
@@ -100,6 +100,7 @@ const TOKENS = {
         "not seeding enough anime",
         "having a positive ratio",
         "using a seedbox",
+        "vote manipulation and deception",
         "being nice to a corgi",
         "being rude to a thimble",
         "confusing spindrift with spindrifter",
@@ -148,6 +149,7 @@ const TOKENS = {
         "reset everyone's ratio",
         "disabled seeding",
         "merged with IPT",
+        "got banned from /r/OpenSignups",
         "decided to stop keeping backups",
         "got hacked by ex-{TRACKER} staff",
         "declared war on {TRACKER} staff",
