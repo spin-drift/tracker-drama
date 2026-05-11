@@ -12,7 +12,7 @@ const TEMPLATES = [
     "{OPENER} {TRACKER} mods just left and joined {TRACKER}",
     "{REVEAL} {TRACKER} mods are secretly in charge of the subreddit",
     "{REVEAL} {TRACKER} is dying because the mods defected to {TRACKER}",
-    "{REVEAL} {TRACKER} is closing because {CLOSING_REASON}",
+    "{REVEAL} I'm closing {TRACKER} because {CLOSING_REASON}",
     "{OPENER} {TRACKER} just announced they're going to start recruiting on {PLACE}",
     "{I_THINK} {TRACKER} will be cabal in {TIME}",
     "{I_THINK} {TRACKER} will be cabal in {TIME}",
@@ -54,7 +54,7 @@ const TOKENS = {
         "I'm mad",
         "Influencers stole all my money",
         "{TRACKER} stole all my staff",
-        "I was hacked by /r/trackers mods",
+        "/r/trackers mods stole all my money",
         "I was hacked by /r/trackers mods who are secretly agents of {TRACKER}"
     ],
         
@@ -92,6 +92,8 @@ const TOKENS = {
 
     OFFENSE: [
         "being TOO good at racing",
+        "pronouncing UNIT3D as UNIT 3D",
+        "pronouncing UNIT3D as United",
         "rebuilding my ZFS pool",
         "recommending ZFS",
         "seeding anime",
