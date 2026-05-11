@@ -9,6 +9,10 @@ const TEMPLATES = [
     "When will the autobrr team make a replacement for {SAVE_US_AUTOBRR}?",
     "When is the autobrr team gonna finally give us a replacement for {SAVE_US_AUTOBRR}?",
     "{OPENER} {TRACKER} is now recruiting from {PLACE}",
+    "{OPENER} {TRACKER} mods just left and joined {TRACKER}",
+    "{REVEAL} {TRACKER} mods are secretly in charge of the subreddit",
+    "{REVEAL} {TRACKER} is dying because the mods defected to {TRACKER}",
+    "{REVEAL} {TRACKER} is closing because {CLOSING_REASON}"
     "{OPENER} {TRACKER} just announced they're going to start recruiting on {PLACE}",
     "{I_THINK} {TRACKER} will be cabal in {TIME}",
     "{I_THINK} {TRACKER} will be cabal in {TIME}",
@@ -33,6 +37,7 @@ const TOKENS = {
         "MTV",
         "BTN",
         "FNP",
+        "FNP",
         "OTW",
         "HUNO",
         "LST",
@@ -40,6 +45,19 @@ const TOKENS = {
         "seedpool"
     ],
 
+    REVEAL: [
+        "TELL-ALL EXPOSÉ:",
+        "That's it, I'm spilling the beans.",
+    ],
+
+    CLOSING_REASON: [
+        "I'm mad",
+        "Influencers stole all my money",
+        "{TRACKER} stole all my staff",
+        "I was hacked by /r/trackers mods",
+        "I was hacked by /r/trackers mods who are secretly agents of {TRACKER}"
+    ],
+        
     NEG_OPENER: [
         "HELP!",
         "The fuck?",
@@ -52,7 +70,8 @@ const TOKENS = {
     OPENER: [
         "Guys,",
         "GUYS!!",
-        "Did you hear?"
+        "Did you hear?",
+        "Woah:"
     ],
 
     PUNISHMENT: [
