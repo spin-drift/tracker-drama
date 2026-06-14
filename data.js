@@ -198,6 +198,7 @@ const TOKENS = {
         "mergerFS",
         "Bazarr",
         "Readarr",
+        "Upload-Assistant",
         "ZFS",
     ],
 
