@@ -46,6 +46,7 @@ const TOKENS = {
     REVEAL: [
         "TELL-ALL EXPOSÉ:",
         "That's it, I'm spilling the beans.",
+        "The Reddit will hear about this...",
     ],
 
     CLOSING_REASON: [
