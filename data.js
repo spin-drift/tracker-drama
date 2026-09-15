@@ -24,9 +24,7 @@ const TEMPLATES = [
 const TOKENS = {
     TRACKER: [
         "Aither",
-        "Aither",
         "Blutopia",
-        "PTP",
         "PTP",
         "GGn",
         "MyAnonamouse",
@@ -34,15 +32,13 @@ const TOKENS = {
         "RED",
         "OPS",
         "BHD",
-        "BHD",
         "MTV",
         "BTN",
-        "FNP",
         "FNP",
         "OTW",
         "HUNO",
         "LST",
-        "seedpool",
+        "ZNTH",
         "seedpool"
     ],
 
@@ -166,8 +162,6 @@ const TOKENS = {
     ],
 
     PLACE: [
-        "Seadex",
-        "Seadex",
         "Seadex",
         "scene",
         "/ptg",
