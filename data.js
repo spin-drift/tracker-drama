@@ -19,6 +19,7 @@ const TEMPLATES = [
     "{I_THINK} {TRACKER} will be cabal in {TIME}",
     "{I_THINK} {TRACKER} is going to overtake {TRACKER}",
     "{I_THINK} {TRACKER} is about to overtake {TRACKER}",
+    "{I_THINK} {TRACKER} is the {TRACKER} of {TRACKER}
 ];
 
 const TOKENS = {
