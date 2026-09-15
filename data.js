@@ -140,6 +140,7 @@ const TOKENS = {
         "(and asking for invites)",
         "(and clogging up modq)",
         "(and using racial slurs)",
+        "(and I'm going to sue)"
     ],
 
     DID_SOMETHING_CRAZY: [
